@@ -99,3 +99,7 @@ Choose **Connect Trainer → Connect FTMS Treadmill** in a Web Bluetooth browser
 This is a read-only connection. **Pause, Finish, loss of Bluetooth, and closing the app do not stop the treadmill belt. Use the treadmill console and safety key.** The app does not request a control point or write speed, incline, start, or stop commands. Course slope does not change the treadmill incline. The app pauses its comparison on a zero speed reading, lost connection, or speed data older than 2.5 seconds. After a stop or reconnect, wait for a fresh speed reading and press **Resume** explicitly. Recovery retains the running activity type and requires treadmill pairing to continue; switching to cycling equipment requires finishing the activity first.
 
 Saved treadmill sessions export as **running / treadmill** in FIT and **Running** in TCX. Software tests exercise a simulated FTMS device; physical treadmill compatibility must still be checked with your model. Proprietary Bluetooth protocols and automatic Strava synchronization are not implemented.
+
+## Project origin
+
+See [project origin and provenance](ORIGIN.md) for maintainer attribution, the first public release, and a privacy-preserving commitment to the retained development record.

@@ -24,8 +24,12 @@
     "sha256": "8cf32c3484448684207ba1213cd3c842f2a1f58e3d1a78035f6f4f2c6a02018e"
   },
   {
+    "path": "ORIGIN.md",
+    "sha256": "2cbacb19b6ffbe1a7f02f22d5769e58461e89a263fd708ad942b699f6a96de12"
+  },
+  {
     "path": "README.md",
-    "sha256": "c768bc0cddfd35704da59481646f759a4ffcdbb38f6fe30b328831d99550daf4"
+    "sha256": "092c30c52eb0310c8754e1a11264aaac56cfa83587648d0730291555c081643f"
   },
   {
     "path": "SECURITY.md",
@@ -489,7 +493,7 @@
   },
   {
     "path": "scripts/release-files.mjs",
-    "sha256": "0d74afde67bb532408ecf96e24ee5af2d3f100b3e39dc18af5fcc7687e41e2b1"
+    "sha256": "961f81623df9a142a72b18473f16b2cefe20d0ee9da652ee0652a5e2736bea5c"
   },
   {
     "path": "scripts/verify-release-browser.mjs",

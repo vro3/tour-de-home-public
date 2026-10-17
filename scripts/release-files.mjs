@@ -9,7 +9,7 @@ export const releaseRoots = [
   'scripts/verify-ride-recovery.mjs', 'scripts/verify-release-browser.mjs',
   'docs/ARCHITECTURE.md', 'docs/ASSETS.md', 'docs/DEPLOYMENT.md', 'docs/HARDWARE-TEST.md',
   'docs/RELEASE-CHECKS.md', 'docs/asset-inventory.json', 'docs/dependency-licenses.json', 'docs/licenses', 'docs/images',
-  'README.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CHANGELOG.md',
+  'README.md', 'ORIGIN.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CHANGELOG.md',
   'package.json', 'package-lock.json', '.node-version', '.gitignore',
   'index.html', 'vite.config.ts', 'tsconfig.json', 'tailwind.config.js', 'postcss.config.js',
 ];
