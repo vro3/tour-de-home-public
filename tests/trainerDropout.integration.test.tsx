@@ -1,6 +1,7 @@
 // @vitest-environment jsdom
 // @vitest-environment-options { "url": "http://localhost/" }
 
+import { StrictMode } from 'react';
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type {
@@ -217,6 +218,9 @@ const sample: TelemetrySample = {
 
 describe('trainer dropout recovery', () => {
   beforeEach(() => {
+    window.history.replaceState({}, '', '/');
+    vi.mocked(rideJournal.restoreUnfinishedSession).mockResolvedValue(null);
+    vi.mocked(rideJournal.startSession).mockClear();
     const values = new Map<string, string>();
     const localStorage = {
       getItem: (key: string) => values.get(key) ?? null,
@@ -241,6 +245,32 @@ describe('trainer dropout recovery', () => {
   afterEach(() => {
     cleanup();
     vi.useRealTimers();
+  });
+
+  it('launches a scenic simulator once from a demo link under StrictMode', async () => {
+    window.history.replaceState({}, '', '/?demo=1');
+    render(<StrictMode><App /></StrictMode>);
+    await screen.findByRole('button', { name: 'Pause (Space)' });
+    expect(rideJournal.startSession).toHaveBeenCalledTimes(1);
+    expect(vi.mocked(rideJournal.startSession).mock.calls[0][0].id).toBe('central_park');
+    expect(window.location.search).toBe('');
+  });
+
+  it('does not overwrite an unfinished ride when opening a demo link', async () => {
+    window.history.replaceState({}, '', '/?demo=1');
+    vi.mocked(rideJournal.restoreUnfinishedSession).mockResolvedValue({routeName:'Saved ride', samples:[], activeTimerSeconds:12, totalDistanceMeters:20,totalElevationGainMeters:0} as any);
+    render(<App />);
+    await waitFor(() => expect(window.location.search).toBe(''));
+    expect(rideJournal.startSession).not.toHaveBeenCalled();
+    expect(harness.trainer).toBeNull();
+  });
+
+  it('does not auto-start if checking recovery storage fails', async () => {
+    window.history.replaceState({}, '', '/?demo=1');
+    vi.mocked(rideJournal.restoreUnfinishedSession).mockRejectedValue(new Error('storage failed'));
+    render(<App />);
+    await screen.findByText(/Automatic demo launch was stopped/);
+    expect(rideJournal.startSession).not.toHaveBeenCalled();
   });
 
   it('zeros stale power, exposes reconnect state, pauses on failure, and supports retry', async () => {

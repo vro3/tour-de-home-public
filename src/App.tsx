@@ -72,6 +72,9 @@ const INITIAL_TELEMETRY: TelemetrySample = {
 };
 
 export function App() {
+  const demoLaunchRequested = useRef(new URLSearchParams(window.location.search).get('demo') === '1');
+  const demoLaunchConsumed = useRef(false);
+  const [recoveryChecked, setRecoveryChecked] = useState(false);
   // Active course
   const [selectedRoute, setSelectedRoute] = useState<RouteModel>(PRESET_ROUTES[0]);
   const [currentRoutePoint, setCurrentRoutePoint] = useState<RoutePoint | null>(
@@ -294,12 +297,18 @@ export function App() {
 
   // Check for crash recovery on mount
   useEffect(() => {
+    let active = true;
     rideJournal.restoreUnfinishedSession().then((session) => {
+      if (!active) return;
       if (session) {
         setUnrecoveredSession(session);
         setIsRecoveryOpen(true);
       }
+      setRecoveryChecked(true);
+    }).catch(() => {
+      if (active) setRideLifecycleError('Could not check saved rides. Automatic demo launch was stopped to protect your previous ride. Reload to retry.');
     });
+    return () => { active = false; };
   }, []);
 
   // Sync initial route point when selectedRoute changes
@@ -756,6 +765,22 @@ export function App() {
     await applyTrainerControl(controlMode, ergTargetWatts, mockTrainerRef.current);
     await wakeLockManager.requestWakeLock();
   };
+
+  // A launch link starts only after storage has ruled out an unfinished ride.
+  // Consume before awaiting so rerenders and StrictMode cannot start two journals.
+  useEffect(() => {
+    if (!demoLaunchRequested.current || demoLaunchConsumed.current || !recoveryChecked || !hasLoadedRoutePreference) return;
+    demoLaunchConsumed.current = true;
+    const url = new URL(window.location.href);
+    url.searchParams.delete('demo');
+    window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+    if (unrecoveredSession || rideState !== 'idle' || routeInteractedRef.current) return;
+    const demoRoute = PRESET_ROUTES.find(route => route.id === 'central_park') ?? PRESET_ROUTES[0];
+    handleSelectRoute(demoRoute);
+    setRideViewMode('scenic');
+    setScenicTheme('deathisland');
+    void handleQuickDemoRide().catch(() => setRideLifecycleError('Could not start the demo. Choose Demo Selected Route to try again.'));
+  }, [recoveryChecked, hasLoadedRoutePreference, unrecoveredSession, rideState]);
 
   const handleDisconnect = async () => {
     if (trainer) {

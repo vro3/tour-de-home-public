@@ -505,7 +505,7 @@
   },
   {
     "path": "src/App.tsx",
-    "sha256": "541e177393a106f9359a0b00a67153d74d092f3f0f02d6edb7341a9a25768702"
+    "sha256": "febe0daeb4d50065852379fcf4b2aaeeb1b9b9fdfaf54d5e04c6656ab3532371"
   },
   {
     "path": "src/ble/bleHeartRate.ts",
@@ -833,7 +833,7 @@
   },
   {
     "path": "tests/trainerDropout.integration.test.tsx",
-    "sha256": "2800ef11be15301456e4e677a79e36a2b68c181d2af4a9813aa7372ebad8b6a6"
+    "sha256": "683aa69b1417f976579522cfc90e905ba1eb5d355862002f216811b566153e4a"
   },
   {
     "path": "tests/wakeLock.test.ts",
