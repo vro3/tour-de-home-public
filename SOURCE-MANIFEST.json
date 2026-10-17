@@ -505,7 +505,7 @@
   },
   {
     "path": "src/App.tsx",
-    "sha256": "febe0daeb4d50065852379fcf4b2aaeeb1b9b9fdfaf54d5e04c6656ab3532371"
+    "sha256": "671b8c0e2abcf60dcd0f031fa1ddd66c0f7fc392171a8fe816a79c4af3ef42b8"
   },
   {
     "path": "src/ble/bleHeartRate.ts",
@@ -565,7 +565,7 @@
   },
   {
     "path": "src/components/RaceYourself.tsx",
-    "sha256": "a28599f834c42bb7f63c1ebc6f18bf85c7e52c5060b8e83b07bf4a35437b9342"
+    "sha256": "e4da7caee0255b592d6347717f1d38e983643324e5171f9907a093a44af2e082"
   },
   {
     "path": "src/components/RoutePicker.tsx",
@@ -585,7 +585,7 @@
   },
   {
     "path": "src/components/SummaryModal.tsx",
-    "sha256": "ef4d7ce5210d7bb6fdffcb86e15a006d88a9bd76d5ed0b1544e2c8064879d3ff"
+    "sha256": "2cb92e64bb34b8da3b90fe12082fc346d980329fdb157669ecff0a390a8c2ddd"
   },
   {
     "path": "src/components/TreadmillHud.tsx",
@@ -620,8 +620,12 @@
     "sha256": "a28adea22961c37d5940bd3b06599e2e4fe7189323628e9fa62141c7cefdbd55"
   },
   {
+    "path": "src/ride/demoGhost.ts",
+    "sha256": "ca8d18479f0d75803ef891ff2dcf7b6df3ef4ca66be081c8d52a3c615c6ed5cc"
+  },
+  {
     "path": "src/ride/ghostRace.ts",
-    "sha256": "e9bda04615742593bd867d781ef2fb2c2fb7cdfcdfceba28a4e15c3fd5949c14"
+    "sha256": "0c13235180ec2672353c308e53d6fff1ba7e9df04c8c3540bcfa5291da16809b"
   },
   {
     "path": "src/ride/rideSafety.ts",
@@ -781,7 +785,7 @@
   },
   {
     "path": "tests/ghostRace.test.ts",
-    "sha256": "7c88e8fbfe16b0a249ae1b458f80fa0b08971c3f46ffff1f4cb46f7443733073"
+    "sha256": "2eececf777fe39d2b8297bf0c7aabab6cb15a83ea3b2a7fbda6db004612d9638"
   },
   {
     "path": "tests/gpuBillboardMaterial.test.ts",
@@ -833,7 +837,7 @@
   },
   {
     "path": "tests/trainerDropout.integration.test.tsx",
-    "sha256": "683aa69b1417f976579522cfc90e905ba1eb5d355862002f216811b566153e4a"
+    "sha256": "26f0e5590aa01cd9751b77d5863b589f7174586f7225ee3ceb8f326df6e7e8db"
   },
   {
     "path": "tests/wakeLock.test.ts",

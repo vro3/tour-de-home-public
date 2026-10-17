@@ -30,7 +30,7 @@ export function RaceHud({ ghost, seconds, distance, paused, totalDistance }: {
   return <section aria-label="Race Yourself comparison" data-race-seconds={seconds.toFixed(3)} data-ghost-distance={ghostDistance.toFixed(3)}
     className="shrink-0 rounded-xl border border-violet-400/30 bg-slate-950/90 px-4 py-2 text-sm text-slate-100">
     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
-      <span className="flex items-center gap-2 font-bold text-violet-200"><Ghost className="h-4 w-4" /> Your ghost{paused ? ' · Paused' : ''}</span>
+      <span className="flex items-center gap-2 font-bold text-violet-200"><Ghost className="h-4 w-4" /> {ghost.demo ? 'Demo ghost' : 'Your ghost'}{paused ? ' · Paused' : ''}</span>
       <output aria-label="Live time gap" aria-live="off" className="font-mono font-bold tabular-nums">{gapLabel(gap)}</output>
       <span className="text-xs text-slate-400">{seconds >= ghost.duration ? (ghost.complete ? 'Ghost finished' : 'Previous ride ended') : `${Math.round(Math.abs(ghostDistance - distance))} m ${ghostDistance > distance ? 'in front' : 'behind you'}`}</span>
     </div>

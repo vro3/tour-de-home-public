@@ -3,6 +3,7 @@ import type { SavedRideSession } from '../storage/rideJournal';
 
 export interface GhostPoint { seconds: number; distance: number }
 export interface GhostRide {
+  demo?: boolean;
   id: string;
   startedAt: number;
   points: GhostPoint[];

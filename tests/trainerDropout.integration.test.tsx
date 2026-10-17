@@ -254,6 +254,20 @@ describe('trainer dropout recovery', () => {
     expect(rideJournal.startSession).toHaveBeenCalledTimes(1);
     expect(vi.mocked(rideJournal.startSession).mock.calls[0][0].id).toBe('central_park');
     expect(window.location.search).toBe('');
+    const toggle = await screen.findByRole('switch', { name: 'Demo ghost' });
+    expect(toggle.getAttribute('aria-checked')).toBe('true');
+    expect(screen.getByLabelText('Live time gap')).toBeTruthy();
+    expect(vi.mocked(rideJournal.startSession).mock.calls[0][3]).toBeUndefined();
+    fireEvent.click(screen.getByRole('button', { name: 'Pause (Space)' }));
+    const comparison = screen.getByLabelText('Race Yourself comparison');
+    const before = [comparison.dataset.raceSeconds, comparison.dataset.ghostDistance];
+    fireEvent.click(toggle);
+    expect(screen.queryByLabelText('Live time gap')).toBeNull();
+    expect(toggle.getAttribute('aria-checked')).toBe('false');
+    fireEvent.click(toggle);
+    const after = screen.getByLabelText('Race Yourself comparison');
+    expect([after.dataset.raceSeconds, after.dataset.ghostDistance]).toEqual(before);
+    expect(rideJournal.startSession).toHaveBeenCalledTimes(1);
   });
 
   it('does not overwrite an unfinished ride when opening a demo link', async () => {

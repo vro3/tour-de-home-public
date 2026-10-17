@@ -25,6 +25,7 @@ import { makeTrainerTelemetrySafe } from './ride/rideSafety';
 import { loadSelectedRoute, saveSelectedRoute } from './storage/appPreferences';
 
 import { loadRideHistory, loadPreviousRide } from './storage/rideHistory';
+import { buildDemoGhost } from './ride/demoGhost';
 import { buildGhost, ghostDistanceAt, type GhostRide } from './ride/ghostRace';
 import { RacePicker, RaceHud } from './components/RaceYourself';
 
@@ -151,7 +152,10 @@ export function App() {
   const [historyError, setHistoryError] = useState<string | null>(null);
   const [historyReload, setHistoryReload] = useState(0);
   const [selectedGhostId, setSelectedGhostId] = useState('');
-  const [raceGhost, setRaceGhost] = useState<GhostRide | null>(null);
+  const [recordedRaceGhost, setRaceGhost] = useState<GhostRide | null>(null);
+  const [demoGhost, setDemoGhost] = useState<GhostRide | null>(null);
+  const [demoGhostEnabled, setDemoGhostEnabled] = useState(true);
+  const raceGhost = demoGhost ? (demoGhostEnabled ? demoGhost : null) : recordedRaceGhost;
   const ghosts = useMemo(() => previousRides.map(ride => buildGhost(ride, selectedRoute))
     .filter((ghost): ghost is GhostRide => ghost !== null), [previousRides, selectedRoute]);
   const selectedGhost = ghosts.find(ghost => ghost.id === selectedGhostId) ?? null;
@@ -684,6 +688,7 @@ export function App() {
       if (sport === 'cycling') await rideJournal.startSession(route, controlMode, ergTargetWatts, selectedGhost?.id);
       else await rideJournal.startSession(route, controlMode, ergTargetWatts, selectedGhost?.id, sport);
       sessionSportRef.current = sport;
+      setDemoGhost(null);
       setRaceGhost(selectedGhost);
       setRideLifecycleError(null);
       return true;
@@ -779,7 +784,11 @@ export function App() {
     handleSelectRoute(demoRoute);
     setRideViewMode('scenic');
     setScenicTheme('deathisland');
-    void handleQuickDemoRide().catch(() => setRideLifecycleError('Could not start the demo. Choose Demo Selected Route to try again.'));
+    void handleQuickDemoRide().then(() => {
+      if (rideStateRef.current !== 'riding') return;
+      setDemoGhost(buildDemoGhost(demoRoute, riderWeightKg));
+      setDemoGhostEnabled(true);
+    }).catch(() => setRideLifecycleError('Could not start the demo. Choose Demo Selected Route to try again.'));
   }, [recoveryChecked, hasLoadedRoutePreference, unrecoveredSession, rideState]);
 
   const handleDisconnect = async () => {
@@ -943,6 +952,7 @@ export function App() {
     rideStateRef.current = 'idle';
     setRideState('idle');
     setRaceGhost(null);
+    setDemoGhost(null);
     setElapsedSeconds(0);
     elapsedMillisecondsRef.current = 0;
     elapsedSecondsRef.current = 0;
@@ -1415,6 +1425,14 @@ export function App() {
           /* Active Ride Screen (HUD + 3D Map + Elevation Ribbon) */
           <div className="flex-1 min-h-0 flex flex-col gap-2.5 w-full h-full overflow-y-auto">
             {rideLifecycleError && <p role="alert" className="shrink-0 rounded-xl bg-amber-950/70 px-3 py-2 text-sm text-amber-100">{rideLifecycleError}</p>}
+            {demoGhost && isMock && <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 rounded-xl border border-violet-400/30 bg-slate-950/90 px-3 py-2">
+              <span className="text-xs text-violet-200">Race Yourself · sample opponent, not a recorded ride</span>
+              <button type="button" role="switch" aria-checked={demoGhostEnabled} aria-label="Demo ghost"
+                onClick={() => setDemoGhostEnabled(value => !value)}
+                className="min-h-11 rounded-lg border border-violet-400/50 px-4 text-sm font-semibold text-violet-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-300">
+                Demo ghost: {demoGhostEnabled ? 'On' : 'Off'}
+              </button>
+            </div>}
             {raceGhost && <RaceHud ghost={raceGhost} seconds={elapsedMillisecondsRef.current / 1000}
               distance={totalDistanceMeters} paused={rideState !== 'riding'} totalDistance={selectedRoute.totalDistanceMeters} />}
             {/* The detailed dashboard belongs to Map Mode; Scenic uses a glass cockpit overlay. */}

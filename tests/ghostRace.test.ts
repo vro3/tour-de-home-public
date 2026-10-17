@@ -1,3 +1,4 @@
+import { buildDemoGhost } from '../src/ride/demoGhost';
 import { describe, expect, it } from 'vitest';
 import { buildGhost, ghostDistanceAt, ghostGapAt, sameCourse } from '../src/ride/ghostRace';
 import type { SavedRideSession } from '../src/storage/rideJournal';
@@ -62,3 +63,20 @@ describe('pause-safe ghost replay', () => {
     expect(buildGhost(ride(points), route)).toBeNull();
   });
 });
+
+ describe('illustrative demo ghost', () => {
+ it('uses a deterministic complete course timeline with finite monotonic samples', () => {
+ const ghost = buildDemoGhost(route);
+ expect(ghost.demo).toBe(true);
+ expect(ghost.complete).toBe(true);
+ expect(ghost.distance).toBe(100);
+ expect(ghost).toEqual(buildDemoGhost(route));
+ for(let i=1;i<ghost.points.length;i++) {
+ expect(ghost.points[i].seconds).toBeGreaterThan(ghost.points[i-1].seconds);
+ expect(ghost.points[i].distance).toBeGreaterThanOrEqual(ghost.points[i-1].distance);
+ expect(Number.isFinite(ghost.points[i].distance)).toBe(true);
+ }
+ const t=ghost.duration/2;
+ expect(ghostGapAt(ghost,ghostDistanceAt(ghost,t),t)).toBeCloseTo(0,5);
+ });
+ });

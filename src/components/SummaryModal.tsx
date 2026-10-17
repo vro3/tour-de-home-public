@@ -102,7 +102,7 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({
         {raceGhost && <section aria-label="Race Yourself result" className="rounded-xl border border-violet-400/30 bg-violet-950/30 p-4">
           <h3 className="font-bold text-violet-200">Race Yourself</h3>
           <p className="mt-1 font-mono text-lg">{gapLabel(ghostGapAt(raceGhost, session.totalDistanceMeters, session.activeTimerSeconds))}</p>
-          <p className="mt-1 text-xs text-slate-400">Compared at the same course distance using active riding time.{!raceGhost.complete || session.totalDistanceMeters < (session.route?.totalDistanceMeters ?? Infinity) - 0.01 ? ' Partial ride comparison.' : ''}</p>
+          <p className="mt-1 text-xs text-slate-400">{raceGhost.demo ? 'Illustrative demo opponent. ' : ''}Compared at the same course distance using active riding time.{!raceGhost.complete || session.totalDistanceMeters < (session.route?.totalDistanceMeters ?? Infinity) - 0.01 ? ' Partial ride comparison.' : ''}</p>
         </section>}
 
         {/* Stats Grid */}
