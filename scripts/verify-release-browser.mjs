@@ -178,7 +178,7 @@ async function screenshot(name) {
 
 try {
   await startBrowser();
-  await waitFor(() => evaluate("document.body.innerText.includes('First Ride')"), 'sample library under hosting subpath');
+  await waitFor(() => evaluate("document.body?.innerText.includes('First Ride') ?? false"), 'sample library under hosting subpath');
   await screenshot('home-desktop');
   steps.push({ step: 'fresh start at /tour-de-home/', sampleLibraryLoaded: true });
   await send('Emulation.setDeviceMetricsOverride', { width: 360, height: 800, deviceScaleFactor: 1, mobile: false }, sessionId);

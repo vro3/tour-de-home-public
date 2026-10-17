@@ -497,7 +497,7 @@
   },
   {
     "path": "scripts/verify-release-browser.mjs",
-    "sha256": "33d177fce3ffcf31fc55780ca42bd73ef624e30880ebb25fe1608e9307418393"
+    "sha256": "1926bd2c47ac301b5e2ea46a8394dabdef479b0960661e85b6ba5bbe648424f0"
   },
   {
     "path": "scripts/verify-ride-recovery.mjs",
