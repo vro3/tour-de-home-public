@@ -1,0 +1,53 @@
+{
+  "name": "tour-de-home",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "preview": "vite preview",
+    "samples:generate": "node scripts/generate-sample-courses.mjs",
+    "test:browser": "node scripts/verify-ride-recovery.mjs",
+    "release:check": "node scripts/check-release.mjs",
+    "release:prepare": "node scripts/prepare-release.mjs",
+    "licenses:generate": "node scripts/generate-notices.mjs",
+    "test:release-browser": "node scripts/verify-release-browser.mjs"
+  },
+  "dependencies": {
+    "@markw65/fit-file-writer": "^0.2.0",
+    "@react-three/fiber": "^8.18.0",
+    "@types/three": "^0.170.0",
+    "clsx": "^2.1.1",
+    "fast-xml-parser": "^5.11.0",
+    "fit-file-parser": "^6.2.2",
+    "idb-keyval": "^6.2.1",
+    "lucide-react": "^0.469.0",
+    "maplibre-gl": "^6.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/web-bluetooth": "^0.0.20",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^30.0.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^4.1.11"
+  },
+  "license": "MIT",
+  "description": "An open-source indoor cycling app for FTMS trainers, GPX courses, and scenic rides."
+}

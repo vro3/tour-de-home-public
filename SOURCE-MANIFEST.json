@@ -1,0 +1,850 @@
+[
+  {
+    "path": ".github/workflows/verify.yml",
+    "sha256": "54b4600550667b950768555c7e4ce8c70e8ff419234f2bde27861483856e247d"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "755ff38873cd7235bb70f0e55d12cc2e030795dd46dc3e1dd5c2fa0cdb3cf448"
+  },
+  {
+    "path": ".node-version",
+    "sha256": "b911698dc3cf3227d34d0ad6727f1c4408791203c9665de99ab959331a1fb07d"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "sha256": "d1a92312ed448e428e28c297bcf7e8ac8a9fc036d75a7567d4659d12528f2803"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "0c4ef67f427512c5f64c1806d65c87ccb89ff288cf208e4bc8b3a28e8d41cbf7"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "8cf32c3484448684207ba1213cd3c842f2a1f58e3d1a78035f6f4f2c6a02018e"
+  },
+  {
+    "path": "README.md",
+    "sha256": "c768bc0cddfd35704da59481646f759a4ffcdbb38f6fe30b328831d99550daf4"
+  },
+  {
+    "path": "SECURITY.md",
+    "sha256": "bf05c918fedde0c02484b1041521ab411292a5a85cfecce65e59d978b4e0cea2"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "cb4fe33e2c41b4b88d0416d5659ddd18abe3946a9c93063e0840cc999cc81c71"
+  },
+  {
+    "path": "docs/ASSETS.md",
+    "sha256": "6491b6c7984f90bf2e56222c48331643175806de7ea35c0364f7b78059cc5b54"
+  },
+  {
+    "path": "docs/DEPLOYMENT.md",
+    "sha256": "a4e6030b789780f7ef7ceecbe4b320085f555eb52985067ca02fe70e40550d49"
+  },
+  {
+    "path": "docs/HARDWARE-TEST.md",
+    "sha256": "c9d8377a5ac1f2291485ab0c871192f4fa8fbe468b81d70b0e5b904b6219b159"
+  },
+  {
+    "path": "docs/RELEASE-CHECKS.md",
+    "sha256": "65100627f54a91c4846abfd5dbc7efff1645fe5fe06cb6ee8ddb840997d9c0e1"
+  },
+  {
+    "path": "docs/asset-inventory.json",
+    "sha256": "1573970327af4b8fb9ae55134997b31a425f3fea557d46660c0458ec57039b56"
+  },
+  {
+    "path": "docs/dependency-licenses.json",
+    "sha256": "065ec141d1f6818bcdc834e5679d327a99133ffe829f4f8a0a601c2b8568c9a7"
+  },
+  {
+    "path": "docs/images/demo-ride.png",
+    "sha256": "0f8b23711539fcf0be35fdf99f0fd30cc2304ffa6909b0b255223bc17867eb6e"
+  },
+  {
+    "path": "docs/licenses/murmurhash-js.txt",
+    "sha256": "00309875dc165cf120f89b6d04ff97b9958bbc7b9db1a26457a602dcf4e35937"
+  },
+  {
+    "path": "docs/licenses/nodable-entities.txt",
+    "sha256": "750cb3fb6362804957ef52caaf9b5c824015be44d494637330d7cd8834d31d40"
+  },
+  {
+    "path": "docs/licenses/react-three-fiber.txt",
+    "sha256": "ebd6a29bec64bdfcf8795388f2eceaf1479c14d343c0846de347ab8609d66139"
+  },
+  {
+    "path": "docs/licenses/sources.json",
+    "sha256": "7de3da7af673ce6e902444de22a6959624830dc78ec2f398367e9eb5fe026e22"
+  },
+  {
+    "path": "index.html",
+    "sha256": "1bd712be9d9940677cd7c37adc10300e6b017a238dbdbd17bebdcd532a182802"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "face8afe1426116f5698b693160adcd15ee43c41d68392cc9bddc34bde87f06b"
+  },
+  {
+    "path": "package.json",
+    "sha256": "10029f1167199ba5098036b41f742d19b4fd306b10f8c2d2d56b50fe9c3e828d"
+  },
+  {
+    "path": "postcss.config.js",
+    "sha256": "190c877db466995bf1482f4a16abd06e04a89ede3119341e2a86ff96e1737b27"
+  },
+  {
+    "path": "public/THIRD-PARTY-NOTICES.txt",
+    "sha256": "5c5b3af84332088aeda6db567ac894046d09815cf3dbe98f13aa51f20909a931"
+  },
+  {
+    "path": "public/course-library/courses.json",
+    "sha256": "40b24f5036b3df49eefd55e983f86f1b84cc9e3483d1fe3ead4d727fd4ff8c3e"
+  },
+  {
+    "path": "public/course-library/samples/first-ride.gpx",
+    "sha256": "9c842ce76c0d7a1f4b8874416d0a39773f14f08f76e05f8e0637af8693735555"
+  },
+  {
+    "path": "public/course-library/samples/rolling-hills.gpx",
+    "sha256": "8f2a4c60c0afa37de0c7eadb5e23e2e0feb59fe2ae916d7b0711c594caa09c69"
+  },
+  {
+    "path": "public/course-library/samples/steady-climb.gpx",
+    "sha256": "2f5e41d3dfa01aa856908c0ca0e97d6fec610b39e4b0e102f11cb534afcb72cc"
+  },
+  {
+    "path": "public/scenic/props/alpine-fjord-biome-low.webp",
+    "sha256": "6d8168b8a49773310ed4e1bfa0bad7664b188b5555d877796cba46465111013a"
+  },
+  {
+    "path": "public/scenic/props/alpine-fjord-biome.webp",
+    "sha256": "99d54341e530217f75b99dd65c0d0415cf6678a3e07e5463b1d35995ed59684f"
+  },
+  {
+    "path": "public/scenic/props/cobalt-expanse-biome-low.webp",
+    "sha256": "4f1a3f3b4ceaa6da13e2433bfab9917b0d601e78eb5b6a74e64775e836dadc08"
+  },
+  {
+    "path": "public/scenic/props/cobalt-expanse-biome.webp",
+    "sha256": "cd6db21330d09361905ec5555caba1dfb9476000f16368ce9545eb6964586218"
+  },
+  {
+    "path": "public/scenic/props/copper-ravine-biome-low.webp",
+    "sha256": "19acce47b3de4791ecff72ff71510044c62874e55dbe5fc4c00e1043d28d5536"
+  },
+  {
+    "path": "public/scenic/props/copper-ravine-biome.webp",
+    "sha256": "b61fafd72d03a08d5ebcdba35bff57d459f62f79d031615e7c3112ef55890edd"
+  },
+  {
+    "path": "public/scenic/props/frozen-night-biome-low.webp",
+    "sha256": "f1077d6f9b271c554208243cc03bae3305e4af8b1e342d48af921235d5c79f4e"
+  },
+  {
+    "path": "public/scenic/props/frozen-night-biome.webp",
+    "sha256": "63383ddc49bf142aab7ecb2a6b982f6c715202e2ada1812edf5480f6c877b1e5"
+  },
+  {
+    "path": "public/scenic/props/glacier-vault-biome-low.webp",
+    "sha256": "2aa99164006ea97c01c63b0f30b649c777c1db26b5b15b5cbadc18bfb0eb074f"
+  },
+  {
+    "path": "public/scenic/props/glacier-vault-biome.webp",
+    "sha256": "b56b7189c7048b44520e0e43149dc0cfbdd122b70d8ebfc86c9e7cc607445ebf"
+  },
+  {
+    "path": "public/scenic/props/individual/avalanche-glacial-boulder-cluster-a-v1-low.webp",
+    "sha256": "cdeaf53bf8059f5d2297d1f546618149fac6836dd70d5e7b23004e740a4ec23e"
+  },
+  {
+    "path": "public/scenic/props/individual/avalanche-glacial-boulder-cluster-a-v1.webp",
+    "sha256": "fc3a8d61300c6ca4b002afde5f164cdcf8a1f13db753cf01c57b62e7c3be43ee"
+  },
+  {
+    "path": "public/scenic/props/individual/avalanche-snow-laden-subalpine-fir-a-v1-low.webp",
+    "sha256": "b2e220e4af169eeae2190190d286c20a4cf78676a2a773e7a72aa5ade3861f30"
+  },
+  {
+    "path": "public/scenic/props/individual/avalanche-snow-laden-subalpine-fir-a-v1.webp",
+    "sha256": "8d0460cf856a8c2104bd773286dcd43ab18b7e3b4282e9d63689ad809d4db8eb"
+  },
+  {
+    "path": "public/scenic/props/individual/avalanche-wind-sculpted-snowdrift-a-v1-low.webp",
+    "sha256": "aefe110a74ab27c962ea7283928628652ffba761c09200db2fc1820bb5ab9da3"
+  },
+  {
+    "path": "public/scenic/props/individual/avalanche-wind-sculpted-snowdrift-a-v1.webp",
+    "sha256": "1b52210dcba00aae8beafef6fdc74c9356f262fb1f51c1e1a8e691693b72a669"
+  },
+  {
+    "path": "public/scenic/props/individual/coastalhighway-limestone-planter-rock-a-v1-low.webp",
+    "sha256": "a9d95b91f1cdd7debb0b5f64865b994df7b2265fa965fce8f55dc76b6b0d5b25"
+  },
+  {
+    "path": "public/scenic/props/individual/coastalhighway-limestone-planter-rock-a-v1.webp",
+    "sha256": "731faf9526de55f15c528469a8f634905204bdfbe2f418fc5ff6a996fdf52237"
+  },
+  {
+    "path": "public/scenic/props/individual/coastalhighway-tropical-groundcover-a-v1-low.webp",
+    "sha256": "5164fc907b182e484bfaa74d485d8c8549b292b72e4e5b5fa3162c3e3cd2f6f1"
+  },
+  {
+    "path": "public/scenic/props/individual/coastalhighway-tropical-groundcover-a-v1.webp",
+    "sha256": "18a5cf42a2fd9418c023d447baaa55b2b9e110de87fa28090f123b96254971be"
+  },
+  {
+    "path": "public/scenic/props/individual/coastalhighway-wind-bent-palm-a-v1-low.webp",
+    "sha256": "aab366328115893faf0e4081c57ed720e585925e00df7332d0cfffa4c10a5d5e"
+  },
+  {
+    "path": "public/scenic/props/individual/coastalhighway-wind-bent-palm-a-v1.webp",
+    "sha256": "f985c6e6c8c72fc0722adf4fa48547b9b0c700330986b5b6aee3dc7c66b6e672"
+  },
+  {
+    "path": "public/scenic/props/individual/deathisland-lush-groundcover-a-v1-low.webp",
+    "sha256": "ce639643f3835787adecad1a31bd0cceaf2b350aa24255ef18248caa13b5cf27"
+  },
+  {
+    "path": "public/scenic/props/individual/deathisland-lush-groundcover-a-v1.webp",
+    "sha256": "7c69cdc7fc60f4fa2395a8fa52c24bdadc45ed1cfeae0f55d6d5afa9b1705a8f"
+  },
+  {
+    "path": "public/scenic/props/individual/deathisland-tropical-tree-a-v1-low.webp",
+    "sha256": "0e2a7642ac9f9d905da737aad6b46a4d8fc12bc453fb2c6c26b1d0059ae00b09"
+  },
+  {
+    "path": "public/scenic/props/individual/deathisland-tropical-tree-a-v1.webp",
+    "sha256": "34f43985b5af88b5b40ca3215e9113af029df80d6f5b753fac2656ef04adb366"
+  },
+  {
+    "path": "public/scenic/props/individual/deathisland-volcanic-rock-cluster-a-v1-low.webp",
+    "sha256": "2526015cae31f20154856b9347d7e49f8d42f1e1d217cf91635a90cb44f6f7bb"
+  },
+  {
+    "path": "public/scenic/props/individual/deathisland-volcanic-rock-cluster-a-v1.webp",
+    "sha256": "baaa1b7fa64bde62036cdca565cf7df11463970689c78a9f1a47d892134d8847"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-conifer-a-v1-low.webp",
+    "sha256": "44b207bdcd6667ef1359ab4bfa48b16eb8e0f681242a2b01fa5e692ebc6e10f2"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-conifer-a-v1.webp",
+    "sha256": "bda5a33a517fb065a7d2688b2f75ceac62eb49761c857b4abfef49b8abd61de7"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-conifer-b-v1-low.webp",
+    "sha256": "90df796af39da6908faa781ddf6cfed71093782cf193548cf09b6bbfcbca1880"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-conifer-b-v1.webp",
+    "sha256": "c4622891c22a84ab9b0b4081f9ecfc53a0356f026ab1aebf5e466d3107e46d08"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-heather-groundcover-b-v1-low.webp",
+    "sha256": "a218ba53a3abdf5d4c35fb8ba36f99c5cbc829e931511bbab62ef4b6699c3ab7"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-heather-groundcover-b-v1.webp",
+    "sha256": "3cbf914cd319480a003207e3eee4072fdfdf081164ea713e16eba2171c0a1055"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-waterfall-cascade-a-v1-low.webp",
+    "sha256": "d85e7561c31521b7475d9abb982189d9ff22bfa0831449fd1130743830a8ecc2"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-alpine-waterfall-cascade-a-v1.webp",
+    "sha256": "ac9787094affa874d9be837c18de74e030b885d7d71971f5bc04669153d59f50"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-fern-wildflower-groundcover-a-v1-low.webp",
+    "sha256": "eea67353fb3d75c42d90e077f424e1cbf8728a397cc91a79e9375e90c2701019"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-fern-wildflower-groundcover-a-v1.webp",
+    "sha256": "aa4a6b5f82e4877cec28064546d4f8d0d1111b96f0a1f45d29b05fd62caf9a8d"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-fractured-granite-outcrop-b-v1-low.webp",
+    "sha256": "d5e434df1932521298262d018bc6aec8df549227a94771a524a0f7134107abd6"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-fractured-granite-outcrop-b-v1.webp",
+    "sha256": "984ce8f3738a36b8e91b5d417897b44743962e5976b49aebee9f449c1fdf4bc3"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-mossy-granite-cluster-a-v1-low.webp",
+    "sha256": "23a44a85fed59db1e25c2df13f5250e0a5567d0c7c337775aeef2034e5f7ea88"
+  },
+  {
+    "path": "public/scenic/props/individual/forge-mossy-granite-cluster-a-v1.webp",
+    "sha256": "e087659d8b4c53bc381d501f01f5a4f9687e8ab232d0cb735962e059f8b08c84"
+  },
+  {
+    "path": "public/scenic/props/individual/nmpdhq-concrete-metal-barrier-a-v1-low.webp",
+    "sha256": "cc17d707a046a5e40e3065a095161c140d80536b02a87513315ff5d3cb456033"
+  },
+  {
+    "path": "public/scenic/props/individual/nmpdhq-concrete-metal-barrier-a-v1.webp",
+    "sha256": "f1e5039b19df48290ec95325047059d9a4eb138c70a56bbce9d4b02515c52061"
+  },
+  {
+    "path": "public/scenic/props/individual/nmpdhq-wet-street-tree-a-v1-low.webp",
+    "sha256": "2d0d0ff34f55f8907be14052344b6f73b9929ff3e1c0f900092633f346b0cfe3"
+  },
+  {
+    "path": "public/scenic/props/individual/nmpdhq-wet-street-tree-a-v1.webp",
+    "sha256": "5d4a184fe6748207a0d26d94c36243e8e5066f92c604f3e726c42ca32975b1b0"
+  },
+  {
+    "path": "public/scenic/props/individual/nmpdhq-wet-urban-planter-a-v1-low.webp",
+    "sha256": "5910cb8f8979b010ac54f9fef288255ed374357dd25ab75858ecdbf2425e8ef0"
+  },
+  {
+    "path": "public/scenic/props/individual/nmpdhq-wet-urban-planter-a-v1.webp",
+    "sha256": "fe1d3bbc8cc2d6f2a2583947a7483bcc88d804e2f00d0f34470ba9cf4471d5d1"
+  },
+  {
+    "path": "public/scenic/props/individual/powerhouse-dry-groundcover-a-v1-low.webp",
+    "sha256": "ca8577a1ce271dbe3121d28d934993455034ca1fbb9d886e42479b21f96fc7f7"
+  },
+  {
+    "path": "public/scenic/props/individual/powerhouse-dry-groundcover-a-v1.webp",
+    "sha256": "a56304b42a11465811ffbbf4bb93bfdaad573f2dd01257af1f113082ae7b5bd3"
+  },
+  {
+    "path": "public/scenic/props/individual/powerhouse-industrial-utility-cabinet-a-v1-low.webp",
+    "sha256": "4c3208639d94251424c34f95c7f5447baf7805405c4941504994957690c631a9"
+  },
+  {
+    "path": "public/scenic/props/individual/powerhouse-industrial-utility-cabinet-a-v1.webp",
+    "sha256": "1e0f42f0f32d71f71e6f2681d618d62421732685d8d7095bdbe08cc048fdc707"
+  },
+  {
+    "path": "public/scenic/props/individual/powerhouse-red-rock-outcrop-a-v1-low.webp",
+    "sha256": "16490d74ea0b21fcbc65473f4900cab0a5f2ddf498975efd36b926fb910d1983"
+  },
+  {
+    "path": "public/scenic/props/individual/powerhouse-red-rock-outcrop-a-v1.webp",
+    "sha256": "5996115eff32f6a8fdb903804ee52d08ca5f4d75da7cb057c87a2c80d6446ff1"
+  },
+  {
+    "path": "public/scenic/props/individual/sidewinder-frosted-slate-outcrop-a-v1-low.webp",
+    "sha256": "8913da37378f637088c6bd84b7be61c51da0cd2bee71b87da8f033e5016e9457"
+  },
+  {
+    "path": "public/scenic/props/individual/sidewinder-frosted-slate-outcrop-a-v1.webp",
+    "sha256": "a318e5cf475540365c93b256b1265370d497252dfd6d373a9016aaa863dd7062"
+  },
+  {
+    "path": "public/scenic/props/individual/sidewinder-frozen-tundra-grass-a-v1-low.webp",
+    "sha256": "d68679df69b2717802c055a2f9c88874be6caeab392509aada11fc47eb78b1ee"
+  },
+  {
+    "path": "public/scenic/props/individual/sidewinder-frozen-tundra-grass-a-v1.webp",
+    "sha256": "43b28fc9e3499be53d1574670a3fa4db77f687224be61e7c9e936e6016956fba"
+  },
+  {
+    "path": "public/scenic/props/individual/sidewinder-wind-bent-boreal-conifer-a-v1-low.webp",
+    "sha256": "760588a21cd1994ab720591acf8de93c6355c56471a6ef30240ea8672b58977b"
+  },
+  {
+    "path": "public/scenic/props/individual/sidewinder-wind-bent-boreal-conifer-a-v1.webp",
+    "sha256": "d49890d858eac06f1602c1e9083883de4b244f1c213271bf2040dec833c41eb0"
+  },
+  {
+    "path": "public/scenic/props/individual/snowbound-blue-ice-blade-formation-a-v1-low.webp",
+    "sha256": "f70872744c63f72f2017f2961b1754fbc41ac00d63da8414edc2315100e10079"
+  },
+  {
+    "path": "public/scenic/props/individual/snowbound-blue-ice-blade-formation-a-v1.webp",
+    "sha256": "a1ddbce4b4e8e79d74d609d643b3f69c12cbd0eea24b5c5185577a6c3dc34625"
+  },
+  {
+    "path": "public/scenic/props/individual/snowbound-lavender-ice-crystal-cluster-a-v1-low.webp",
+    "sha256": "34ae2696651e1412e5e535f54b93d83d6411d25ecb17fc74f80410fe0b25fd38"
+  },
+  {
+    "path": "public/scenic/props/individual/snowbound-lavender-ice-crystal-cluster-a-v1.webp",
+    "sha256": "45a551e7c10f5e70975dca561a4563bca00bd4d13621d77b65c1befd1007d0fc"
+  },
+  {
+    "path": "public/scenic/props/individual/snowbound-polar-basalt-boulder-a-v1-low.webp",
+    "sha256": "d26fe2c38ad1c99b167b094c568e5ed5df64806e5686a2c11538a37f0b07c70f"
+  },
+  {
+    "path": "public/scenic/props/individual/snowbound-polar-basalt-boulder-a-v1.webp",
+    "sha256": "932726b0eb9f926308872ac0f25b1aeedeb34e106194ca2ac23d444924ac838f"
+  },
+  {
+    "path": "public/scenic/props/sunset-promenade-biome-low.webp",
+    "sha256": "771dd39773ec5cadfe918fb7af3b6e7bb35194acb955645be58f3a7f0236a152"
+  },
+  {
+    "path": "public/scenic/props/sunset-promenade-biome.webp",
+    "sha256": "b9553ff43e0fb068094c222bc9f83a437818809cff4a3a7994519d5380737ec3"
+  },
+  {
+    "path": "public/scenic/props/verdant-tide-biome-low.webp",
+    "sha256": "4d8eb61c035bfd813fc288805ce675d2b73b061cac3aea30a9731f414444fba5"
+  },
+  {
+    "path": "public/scenic/props/verdant-tide-biome.webp",
+    "sha256": "f01744db67ef608aa097cf30f2c9eb17d289ab84a7bc234412ed05a0b12c7cf1"
+  },
+  {
+    "path": "public/scenic/props/violet-metropolis-biome-low.webp",
+    "sha256": "8716b9a0b4b643a7dcb7ecdfdf6e2c1e78fa9bf3b84fe66f369d5677c4d6fb51"
+  },
+  {
+    "path": "public/scenic/props/violet-metropolis-biome.webp",
+    "sha256": "36f83b5b46b3558fdba1f4b64c7766151ce7798821123b5f83ae1e6cd0b0cf8a"
+  },
+  {
+    "path": "public/scenic/skies/alpine-fjord-sky-equirect-low.webp",
+    "sha256": "9f8ad7f446e50ed0eb57dfdad41797b310c0c4908f8e13da3747b5495bde3514"
+  },
+  {
+    "path": "public/scenic/skies/alpine-fjord-sky-equirect.webp",
+    "sha256": "c98721dbb9ab9a2ec07505925b7a1cb10516e461fa4cb233f8717a541ba843a7"
+  },
+  {
+    "path": "public/scenic/skies/cobalt-expanse-sky-equirect-low.webp",
+    "sha256": "9b6e909248fc4be4a598e08946e59ffe2fc4a80fbe4d59eba3992a21b554dca0"
+  },
+  {
+    "path": "public/scenic/skies/cobalt-expanse-sky-equirect.webp",
+    "sha256": "40dbf4db874a021624aa4f21d3b50a4b606bcaf934ba94624df863adb925d742"
+  },
+  {
+    "path": "public/scenic/skies/copper-ravine-sky-equirect-low.webp",
+    "sha256": "6bb48bafd5dc6d9e322f955dea69a3c621f41195404b4653a2d21aafd183af0a"
+  },
+  {
+    "path": "public/scenic/skies/copper-ravine-sky-equirect.webp",
+    "sha256": "9ab86214440aacda489a76773443eb570de944bd5fe4074e48324b9f4dbf7e3d"
+  },
+  {
+    "path": "public/scenic/skies/frozen-night-sky-equirect-low.webp",
+    "sha256": "a64327f72544574dfc2aa29501b62aa1dc3b2fcb1dee3dd0a1b7eae0142f471a"
+  },
+  {
+    "path": "public/scenic/skies/frozen-night-sky-equirect.webp",
+    "sha256": "c59c86c275d226ed6ffa07e22878306ad4ea283442e30e435479cff9997395d5"
+  },
+  {
+    "path": "public/scenic/skies/glacier-vault-sky-equirect-low.webp",
+    "sha256": "5dfca3d1547a919b695ad9991df1fcc93cdc3af47afd9a197ca6c4f48c9e875f"
+  },
+  {
+    "path": "public/scenic/skies/glacier-vault-sky-equirect.webp",
+    "sha256": "a1cd0b9d563aa3efc9d1831289cde05664f977a68bc5887d4e0ebdc8f0a3f3ab"
+  },
+  {
+    "path": "public/scenic/skies/sunset-promenade-sky-equirect-low.webp",
+    "sha256": "44ff2770a600145e33456db4f2763fa11a351d09bdefb3f2cf40b3234e970db4"
+  },
+  {
+    "path": "public/scenic/skies/sunset-promenade-sky-equirect.webp",
+    "sha256": "91596c8ed540af8b2ed9781b5bba5848a7aa20e6c6fc9c444c6195c2032d979e"
+  },
+  {
+    "path": "public/scenic/skies/verdant-tide-sky-equirect-low.webp",
+    "sha256": "0d9436ac8011f6a52fce3038a65970aeba34d863956b64cb93cc4c425960301b"
+  },
+  {
+    "path": "public/scenic/skies/verdant-tide-sky-equirect.webp",
+    "sha256": "f7258f7b5187b6a89008f33f3f3586522c1c0283ab063a3bf0f38289e39f47db"
+  },
+  {
+    "path": "public/scenic/skies/violet-metropolis-sky-equirect-low.webp",
+    "sha256": "454d31d18b4e97900e8244e3e7a43b469403781e705df4c868521f9a7b104845"
+  },
+  {
+    "path": "public/scenic/skies/violet-metropolis-sky-equirect.webp",
+    "sha256": "fa667da25d75c5c1b756343f6cf4c5606f6d78ae6d039fc0d7716065f09dd865"
+  },
+  {
+    "path": "public/tour-de-home.svg",
+    "sha256": "6acde19f579544d63b4a45016824566f9a6f596b67872af085a6df52534e538c"
+  },
+  {
+    "path": "scripts/check-release.mjs",
+    "sha256": "5b7bee906771164073776fd0ade4cbd72db58942ff7aa6040c39e4fc24d3340a"
+  },
+  {
+    "path": "scripts/generate-notices.mjs",
+    "sha256": "afee5f0c481e2826a03ab52c70013936b243f51e084846197db7898bfdfa1399"
+  },
+  {
+    "path": "scripts/generate-sample-courses.mjs",
+    "sha256": "8987eb38b815866b5e3f573154cd8c5968b3e992b001e385dcb7bf05c8b36eab"
+  },
+  {
+    "path": "scripts/prepare-release.mjs",
+    "sha256": "218179afe2193220bf0280ad1177eedca6b5c0b083f5421645ebc8a0e7149bde"
+  },
+  {
+    "path": "scripts/release-files.mjs",
+    "sha256": "0d74afde67bb532408ecf96e24ee5af2d3f100b3e39dc18af5fcc7687e41e2b1"
+  },
+  {
+    "path": "scripts/verify-release-browser.mjs",
+    "sha256": "33d177fce3ffcf31fc55780ca42bd73ef624e30880ebb25fe1608e9307418393"
+  },
+  {
+    "path": "scripts/verify-ride-recovery.mjs",
+    "sha256": "04e93b1b726bfca8937834f81714a24b072c636bf8e16ec58e24a0d36154235f"
+  },
+  {
+    "path": "src/App.tsx",
+    "sha256": "541e177393a106f9359a0b00a67153d74d092f3f0f02d6edb7341a9a25768702"
+  },
+  {
+    "path": "src/ble/bleHeartRate.ts",
+    "sha256": "fb2f3e9d07594246da95bc46e8875d98884c70fee0d4352e8b899b5e651e11f7"
+  },
+  {
+    "path": "src/ble/ftmsTrainer.ts",
+    "sha256": "39941afd36cf30f13393d7fa97f20cb23bf6f4dbc426fefc955f6ad47a17e1a1"
+  },
+  {
+    "path": "src/ble/ftmsTreadmill.ts",
+    "sha256": "8424bc76f0aae5bdd24c4c1dedce3a859b22fd78620650a318b110194728fb0d"
+  },
+  {
+    "path": "src/ble/mockTrainer.ts",
+    "sha256": "acb32faf22b08002a408d53b9203dc4d4d3c311d19c39c808fb26344f6347ef3"
+  },
+  {
+    "path": "src/ble/trainerInterface.ts",
+    "sha256": "d7babfc7f062fec59250f00330dcb8cbdab4f872781753098c9af39ed0a4a137"
+  },
+  {
+    "path": "src/components/ConnectModal.tsx",
+    "sha256": "69ecffafcc2fb37ca7eeea05d18261953bc0b66d8f7d20e2501ee569f05bb7ac"
+  },
+  {
+    "path": "src/components/CourseLibrary.tsx",
+    "sha256": "5ae8a21dcfadb1cd8856520c07ed3c0234af67cfd13c3766e1e12d515568253d"
+  },
+  {
+    "path": "src/components/CrashRecoveryModal.tsx",
+    "sha256": "6dd1fcc246ac51f3fd183ae829f4d79726b96b0ec3826ad8ce443134e6f1a9bc"
+  },
+  {
+    "path": "src/components/ElevationRibbon.tsx",
+    "sha256": "8da6e3844c914415d8670013cadce32fb492c5c5fce99c90505ee666e8ddf966"
+  },
+  {
+    "path": "src/components/EndRideModal.tsx",
+    "sha256": "8289eedf9554e64e1c525d179e40602b396c8a5db9154426eb928c70feacbd3a"
+  },
+  {
+    "path": "src/components/FitImport.tsx",
+    "sha256": "8aafdf314e5d5fae7d757c3a706feeab25bcd2dcc034cbdefc852aeb6776a2fe"
+  },
+  {
+    "path": "src/components/Hud.tsx",
+    "sha256": "b2c0c2a818c89a1ab863e1d281f22265862ac4fe0cfd04666d6ee4f6edf82a91"
+  },
+  {
+    "path": "src/components/Map3D.tsx",
+    "sha256": "866abf6efe655c32d12d1220246025699b766adbfefc927653d713a62c5fe019"
+  },
+  {
+    "path": "src/components/MockTrainerControls.tsx",
+    "sha256": "364dd5ce06d451e00d1dfc19162941ff7893b74721f393da2b9a1fabbac6270a"
+  },
+  {
+    "path": "src/components/RaceYourself.tsx",
+    "sha256": "a28599f834c42bb7f63c1ebc6f18bf85c7e52c5060b8e83b07bf4a35437b9342"
+  },
+  {
+    "path": "src/components/RoutePicker.tsx",
+    "sha256": "7380336e64e9388e00786d0bf05e33915c1a7faa71f58e0831538f12c358af10"
+  },
+  {
+    "path": "src/components/ScenicClimbBar.tsx",
+    "sha256": "1de24721a360ab66d0730da4279199411e448def023a72bea4bb6d1698758628"
+  },
+  {
+    "path": "src/components/ScenicHud.tsx",
+    "sha256": "c445894b96fa1eb7a85708aec2c973cb6cc1ad2b614a7a8544d3de502dfa7473"
+  },
+  {
+    "path": "src/components/ScenicRide.tsx",
+    "sha256": "f6fd212769310e922808aaffda2b0efc6502ad20ece972cfe9a4e3c2135833a0"
+  },
+  {
+    "path": "src/components/SummaryModal.tsx",
+    "sha256": "ef4d7ce5210d7bb6fdffcb86e15a006d88a9bd76d5ed0b1544e2c8064879d3ff"
+  },
+  {
+    "path": "src/components/TreadmillHud.tsx",
+    "sha256": "2dda76f82e85bdd4ad364f48b3c505d4087f3d67014ffaf6f71bd58e591d8df5"
+  },
+  {
+    "path": "src/components/useModalFocus.ts",
+    "sha256": "602ffbeb0efa96be7393b1c2f1c7ca8212c00d5461c15ea4a25b01aba55adbab"
+  },
+  {
+    "path": "src/export/fitExporter.ts",
+    "sha256": "3de946537aee91fec42f6b07f301a1aff0d47a164466b96cb3cb42978f76409c"
+  },
+  {
+    "path": "src/export/tcxExporter.ts",
+    "sha256": "f7497a5535ec84532f02a38baad39a1542c1ecd9ddec851b07c473b776a822de"
+  },
+  {
+    "path": "src/import/fitImport.ts",
+    "sha256": "3680f22a2a92089715152d8d860499a1f5cb7ee216c7340049b2a301be25a558"
+  },
+  {
+    "path": "src/index.css",
+    "sha256": "ce9b5a5987c728870abc3ab52309e3eec6c4b8a3d31dc2e592c63c533dff233f"
+  },
+  {
+    "path": "src/main.tsx",
+    "sha256": "79faf095f462c11b5dc445dac9043c06809247d25c47f6693fccd656d1a1d35a"
+  },
+  {
+    "path": "src/physics/virtualSpeed.ts",
+    "sha256": "a28adea22961c37d5940bd3b06599e2e4fe7189323628e9fa62141c7cefdbd55"
+  },
+  {
+    "path": "src/ride/ghostRace.ts",
+    "sha256": "e9bda04615742593bd867d781ef2fb2c2fb7cdfcdfceba28a4e15c3fd5949c14"
+  },
+  {
+    "path": "src/ride/rideSafety.ts",
+    "sha256": "715e19e1c36cc2dc32c06be5641a120eedb6ca735ae329bd347dede755004712"
+  },
+  {
+    "path": "src/route/gpxParser.ts",
+    "sha256": "0f8f0d0f13592af91faf6947288a5026b8806d3973241644528a2f7e3b159bb0"
+  },
+  {
+    "path": "src/route/gradeSmoother.ts",
+    "sha256": "e604808d5cbf7552561bc67dd9145e5e17a33e96963df36f9fba3f6ef6daa540"
+  },
+  {
+    "path": "src/route/presets.ts",
+    "sha256": "5a84782f9867205404e88e56633d4bc323fb0dfffe72563a075eababf76d9e97"
+  },
+  {
+    "path": "src/route/routeTracker.ts",
+    "sha256": "e3777beb0ddcd45ee3cfd82d17134367f5510500aff2e7e56bdbcff280a7664f"
+  },
+  {
+    "path": "src/scenic/EquirectangularBackground.tsx",
+    "sha256": "514e2175702512ffcabf6554c8adcba97c9a80f08d23e7c6d1ce2506d2d4793a"
+  },
+  {
+    "path": "src/scenic/ScenicEnvironmentLighting.tsx",
+    "sha256": "46dcc97512dcf5cd5f242dea962a4e0dfb54c41cea6e9820d998ca82849d171c"
+  },
+  {
+    "path": "src/scenic/ScenicWaterMaterial.tsx",
+    "sha256": "ed0e87b078e0aa264985691e2b011119b6654ea519141d7b7ed4597d862f54b6"
+  },
+  {
+    "path": "src/scenic/adaptiveQuality.ts",
+    "sha256": "f0ba30e3cbc724bf237dde147841d882af1c801bf51e835a0a80ee1ea21b64aa"
+  },
+  {
+    "path": "src/scenic/billboardVariation.ts",
+    "sha256": "73450f60f608b282cf0b5bbf87574e56f8deab6c8d319f0fe4c6c168597c5f01"
+  },
+  {
+    "path": "src/scenic/cinematicTerrainMaterial.ts",
+    "sha256": "7224122011fdb38cdd93ee01b1a862f52b8dc93c0f2c069db4d7316439ddc9c9"
+  },
+  {
+    "path": "src/scenic/curvaturePresentation.ts",
+    "sha256": "d4dca8e3c1fee99a0131b9fdfb741fb0f3d050c87709841f168cf5f94ece4d06"
+  },
+  {
+    "path": "src/scenic/gpuBillboardMaterial.ts",
+    "sha256": "da3534515f0c0346877ff3bad4d8123e4de6735c1de4fbd971cca85f9af6b624"
+  },
+  {
+    "path": "src/scenic/nearWorldGenerator.ts",
+    "sha256": "e117fd5de39ce0b62c34edb77d4fb957837e1f2d9754180939671fb368534aa1"
+  },
+  {
+    "path": "src/scenic/proceduralMaterials.ts",
+    "sha256": "cc69a61595a12c866610f33f4ea8533bd77d8b835aed6c3930812a10f1547a17"
+  },
+  {
+    "path": "src/scenic/scenicWaterShader.ts",
+    "sha256": "32de115bdaa1e3acfb1fbb7c7673f060408122d9115489ac5a3bb887e8240c47"
+  },
+  {
+    "path": "src/scenic/terrainSystem.ts",
+    "sha256": "b3316f19d3ee297614000d542ac0a822bee21b0e683ba80775518e1fecbe1cad"
+  },
+  {
+    "path": "src/scenic/waterFeatures.ts",
+    "sha256": "c99098b0a4137643b829b0c39d264518634341f5faebce1a8b8d8f7d3ef9988b"
+  },
+  {
+    "path": "src/scenic/worldProfiles.ts",
+    "sha256": "373a0a45b5e0d8c6f6e59df463b7002f5b4f64a1312304c559347919b33c0726"
+  },
+  {
+    "path": "src/storage/appPreferences.ts",
+    "sha256": "1c11b1d3e04786234d7d34cfae4877877ac0472bbe946fbbe21115d9cc71db27"
+  },
+  {
+    "path": "src/storage/rideHistory.ts",
+    "sha256": "72513f991e5790db7959bb0e1f4c16cd166ae56af66ee57af6c41b3f3a82985a"
+  },
+  {
+    "path": "src/storage/rideJournal.ts",
+    "sha256": "f98930bf5f670da9f1a97204d8b3aa0b23fbe67c2c48c425b0d01b3cf68d0d7a"
+  },
+  {
+    "path": "src/types/cycling.ts",
+    "sha256": "b110224759b7a6d58b45cf5e14f9fb78012e11ab0738a42a4103553a17978029"
+  },
+  {
+    "path": "src/types/scenic.ts",
+    "sha256": "1d893c5a60d244eff0aea8f9c98da0a1a3de9476df4d433d9de1a83151cc4ba3"
+  },
+  {
+    "path": "src/utils/wakeLock.ts",
+    "sha256": "d500ae4911f9a4851453e5f22fa8d8c0434a0859ffb22d510bfaf6d305253dce"
+  },
+  {
+    "path": "src/vite-env.d.ts",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "path": "tailwind.config.js",
+    "sha256": "026b2b05c93be8bd76381c07505d43749f39a295384d65c184fa21c4b221d57e"
+  },
+  {
+    "path": "tests/adaptiveQuality.test.ts",
+    "sha256": "8174f0fecb61af65082b74f81fa1286ad4f2ea4de46cf291d3a75875a1e99bd7"
+  },
+  {
+    "path": "tests/billboardVariation.test.ts",
+    "sha256": "4bc25488bdd31f5af90e446fe7d150f22c23446f872ec92c46aea782b6c09404"
+  },
+  {
+    "path": "tests/cinematicTerrainMaterial.test.ts",
+    "sha256": "aa2e2747cdb2d4b5fe7e3b1218a12a77c737692283b5134fd4986fe9b3a08cb3"
+  },
+  {
+    "path": "tests/core.test.ts",
+    "sha256": "27e38d7cf493569b95c5d7c7b05f137edce9f5c7aafc3ff7da45d324279234b8"
+  },
+  {
+    "path": "tests/courseLibrary.test.ts",
+    "sha256": "cea00563a8b3e9e99d453ed51eceff0a5c85091e43d398ff68625c3a931aa798"
+  },
+  {
+    "path": "tests/curvaturePresentation.test.ts",
+    "sha256": "5a56e807069b7d4bfecee6a643ce0df8d764a2ffdc578f937bf4de9e65f917af"
+  },
+  {
+    "path": "tests/equirectangularBackground.test.ts",
+    "sha256": "59b17463c70ef7d4d4158dee2647b52fceb7fb0b6388c543ccba31b87b0893b4"
+  },
+  {
+    "path": "tests/fitImport.test.ts",
+    "sha256": "a46beed1972b63897c6bd10b698ad243ed4535f91d0be63843a9691806d790e9"
+  },
+  {
+    "path": "tests/fitImportUi.test.tsx",
+    "sha256": "958f539ac890306e58232a45ae186471d3c56739caf79a6ea32841333d4cd3e9"
+  },
+  {
+    "path": "tests/fixtures/fitActivity.mjs",
+    "sha256": "4bea098b8194853f87d378f6c3c494ebd7f92b495b57078082a9138aea25c5fd"
+  },
+  {
+    "path": "tests/ftmsTrainerReconnect.test.ts",
+    "sha256": "0fa6355c9ebd396e83a40d99a0f6c3c850a56f74b00f9f269ca2a6bb551612be"
+  },
+  {
+    "path": "tests/ftmsTreadmill.test.ts",
+    "sha256": "3fc3997549bc629299fdf4c94d37ca0333b7deff387f06a5d3b1db044565b9b2"
+  },
+  {
+    "path": "tests/ghostRace.test.ts",
+    "sha256": "7c88e8fbfe16b0a249ae1b458f80fa0b08971c3f46ffff1f4cb46f7443733073"
+  },
+  {
+    "path": "tests/gpuBillboardMaterial.test.ts",
+    "sha256": "2a451363db87d5dd898d1131e2f8f73304e3943d00183b5374407cd2917b5015"
+  },
+  {
+    "path": "tests/nearWorldGenerator.test.ts",
+    "sha256": "7f4ceb4452eb9334431afc42dafed59ff9936d64e1939879ff3d552e4ea79ab8"
+  },
+  {
+    "path": "tests/proceduralMaterials.test.ts",
+    "sha256": "808954c4f1092958730c1a87bc5f691df70948c790523ae4794a79ebae76f529"
+  },
+  {
+    "path": "tests/publicRelease.test.tsx",
+    "sha256": "ef535cfc8f5f9d0b2faa02949a0912e3d1526618b71d22cdf7c1e3e42bc346ee"
+  },
+  {
+    "path": "tests/raceYourselfUi.test.tsx",
+    "sha256": "f0a0cb2628a5bc5512a920fc4bf83c0d33b2109f9ae5428ca58073e1074fb74b"
+  },
+  {
+    "path": "tests/rideJournal.test.ts",
+    "sha256": "a2812da32af6c52a26f1bb54a81d09100565366a95166628a2a632fe2bbed25f"
+  },
+  {
+    "path": "tests/routeSelectionComponents.test.tsx",
+    "sha256": "cd7cd8e71955a6f72795040e7ebcbc79123b86b1dda57cdb4a8c0fe6f3db7881"
+  },
+  {
+    "path": "tests/scenicQualityUi.test.tsx",
+    "sha256": "e32d1e9baf5ac8a6041e62d9f1a15bba033fe5e81c596e9bf29ed9a7d4a8e292"
+  },
+  {
+    "path": "tests/scenicThemes.test.ts",
+    "sha256": "f2ec407367fd6556406deb72030cdc36fb5388ad2ce735557b1c231caf39598c"
+  },
+  {
+    "path": "tests/scenicWaterShader.test.ts",
+    "sha256": "5e2622c1bf3f55baf812eb1be8c0369005ad6b33faa20eb1c1537b089539aed2"
+  },
+  {
+    "path": "tests/telemetry.test.ts",
+    "sha256": "8b7788aef408e8f0c692255e0922b31b305eef788f299517a747cf1b74ebe965"
+  },
+  {
+    "path": "tests/terrainSystem.test.ts",
+    "sha256": "41fa0eee15bd2f1a1473faf4176da3dff0e6553f1d7a115dfe63dd564f834720"
+  },
+  {
+    "path": "tests/trainerDropout.integration.test.tsx",
+    "sha256": "2800ef11be15301456e4e677a79e36a2b68c181d2af4a9813aa7372ebad8b6a6"
+  },
+  {
+    "path": "tests/wakeLock.test.ts",
+    "sha256": "9cbb708eb01180fedd6703ebc7c84e070da5d22cf323436a5dc6b23aa0757117"
+  },
+  {
+    "path": "tests/waterFeatures.test.ts",
+    "sha256": "15a3a9a8d935a1368c4a97ce9e5cdfa229c88ef0bdde5dc594c7d3b86709d104"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "8de1229b5c07be8b90f6ab8164c0037760b0246b5889c288b264950a35f005a5"
+  },
+  {
+    "path": "vite.config.ts",
+    "sha256": "c3e8abdc8ed9d0af5605fa10f83150898f1e077cd118678378dc8d13f8b39720"
+  }
+]

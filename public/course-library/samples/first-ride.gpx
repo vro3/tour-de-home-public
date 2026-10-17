@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Tour de Home" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata><desc>Original synthetic course, MIT licensed. Not a real-world navigation route.</desc></metadata>
+  <trk><name>First Ride</name><trkseg>
+    <trkpt lat="45.0000000" lon="6.0000000"><ele>100.00</ele></trkpt>
+    <trkpt lat="45.0002248" lon="6.0000000"><ele>100.48</ele></trkpt>
+    <trkpt lat="45.0004497" lon="6.0000000"><ele>100.93</ele></trkpt>
+    <trkpt lat="45.0006745" lon="6.0000000"><ele>101.33</ele></trkpt>
+    <trkpt lat="45.0008993" lon="6.0000000"><ele>101.65</ele></trkpt>
+    <trkpt lat="45.0011242" lon="6.0000000"><ele>101.87</ele></trkpt>
+    <trkpt lat="45.0013490" lon="6.0000000"><ele>101.99</ele></trkpt>
+    <trkpt lat="45.0015738" lon="6.0000000"><ele>101.99</ele></trkpt>
+    <trkpt lat="45.0017986" lon="6.0000000"><ele>101.87</ele></trkpt>
+    <trkpt lat="45.0020235" lon="6.0000000"><ele>101.65</ele></trkpt>
+    <trkpt lat="45.0022483" lon="6.0000000"><ele>101.33</ele></trkpt>
+    <trkpt lat="45.0024731" lon="6.0000000"><ele>100.93</ele></trkpt>
+    <trkpt lat="45.0026980" lon="6.0000000"><ele>100.48</ele></trkpt>
+    <trkpt lat="45.0029228" lon="6.0000000"><ele>100.00</ele></trkpt>
+    <trkpt lat="45.0031476" lon="6.0000000"><ele>99.52</ele></trkpt>
+    <trkpt lat="45.0033725" lon="6.0000000"><ele>99.07</ele></trkpt>
+    <trkpt lat="45.0035973" lon="6.0000000"><ele>98.67</ele></trkpt>
+    <trkpt lat="45.0038221" lon="6.0000000"><ele>98.35</ele></trkpt>
+    <trkpt lat="45.0040469" lon="6.0000000"><ele>98.13</ele></trkpt>
+    <trkpt lat="45.0042718" lon="6.0000000"><ele>98.01</ele></trkpt>
+    <trkpt lat="45.0044966" lon="6.0000000"><ele>98.01</ele></trkpt>
+    <trkpt lat="45.0047214" lon="6.0000000"><ele>98.13</ele></trkpt>
+    <trkpt lat="45.0049463" lon="6.0000000"><ele>98.35</ele></trkpt>
+    <trkpt lat="45.0051711" lon="6.0000000"><ele>98.67</ele></trkpt>
+    <trkpt lat="45.0053959" lon="6.0000000"><ele>99.07</ele></trkpt>
+    <trkpt lat="45.0056208" lon="6.0000000"><ele>99.52</ele></trkpt>
+    <trkpt lat="45.0058456" lon="6.0000000"><ele>100.00</ele></trkpt>
+  </trkseg></trk>
+</gpx>

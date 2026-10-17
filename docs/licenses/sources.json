@@ -1,0 +1,17 @@
+[
+  {
+    "file": "nodable-entities.txt",
+    "source": "https://github.com/nodable/val-parsers",
+    "sha256": "750cb3fb6362804957ef52caaf9b5c824015be44d494637330d7cd8834d31d40"
+  },
+  {
+    "file": "react-three-fiber.txt",
+    "source": "https://github.com/pmndrs/react-three-fiber/tree/v8.18.0",
+    "sha256": "ebd6a29bec64bdfcf8795388f2eceaf1479c14d343c0846de347ab8609d66139"
+  },
+  {
+    "file": "murmurhash-js.txt",
+    "source": "https://github.com/mikolalysenko/murmurhash-js/tree/72aabce3f52cb8f16245692a69fd35951e165af0",
+    "sha256": "00309875dc165cf120f89b6d04ff97b9958bbc7b9db1a26457a602dcf4e35937"
+  }
+]

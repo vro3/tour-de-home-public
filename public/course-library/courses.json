@@ -1,0 +1,92 @@
+{
+  "source": "Original simulated courses for exploring Tour de Home. Import your own GPX to ride a real route.",
+  "disclaimer": "These routes are fictional and are not intended for outdoor navigation.",
+  "stats": {
+    "total": 3,
+    "underFiveHours": 3,
+    "countries": 0,
+    "formats": {
+      "sample": 3
+    }
+  },
+  "countries": [
+    "Simulated"
+  ],
+  "courses": [
+    {
+      "id": "first-ride",
+      "name": "First Ride",
+      "raceName": "",
+      "format": "sample",
+      "country": "Simulated",
+      "countryCode": "",
+      "city": "Original synthetic course",
+      "region": "",
+      "year": null,
+      "distanceKm": 0.65,
+      "elevationGainM": 4,
+      "estimatedHours": 0.0325,
+      "underFiveHours": true,
+      "pointCount": 27,
+      "courseLaps": 1,
+      "file": "samples/first-ride.gpx",
+      "sourcePageUrl": null,
+      "officialStatus": "Original synthetic route",
+      "license": "MIT",
+      "tags": [
+        "sample",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "rolling-hills",
+      "name": "Rolling Hills",
+      "raceName": "",
+      "format": "sample",
+      "country": "Simulated",
+      "countryCode": "",
+      "city": "Original synthetic course",
+      "region": "",
+      "year": null,
+      "distanceKm": 6,
+      "elevationGainM": 180,
+      "estimatedHours": 0.3,
+      "underFiveHours": true,
+      "pointCount": 241,
+      "courseLaps": 1,
+      "file": "samples/rolling-hills.gpx",
+      "sourcePageUrl": null,
+      "officialStatus": "Original synthetic route",
+      "license": "MIT",
+      "tags": [
+        "sample",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "steady-climb",
+      "name": "Steady Climb",
+      "raceName": "",
+      "format": "sample",
+      "country": "Simulated",
+      "countryCode": "",
+      "city": "Original synthetic course",
+      "region": "",
+      "year": null,
+      "distanceKm": 4,
+      "elevationGainM": 200,
+      "estimatedHours": 0.2,
+      "underFiveHours": true,
+      "pointCount": 161,
+      "courseLaps": 1,
+      "file": "samples/steady-climb.gpx",
+      "sourcePageUrl": null,
+      "officialStatus": "Original synthetic route",
+      "license": "MIT",
+      "tags": [
+        "sample",
+        "synthetic"
+      ]
+    }
+  ]
+}
